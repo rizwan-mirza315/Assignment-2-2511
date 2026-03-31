@@ -1,0 +1,63 @@
+/* Contact Page Styles */
+
+
+#join-form{
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+#join-form h2{
+    color: #031940;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#join-form label{
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #031940;
+}
+
+#join-form button{
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color:#031940;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /*changes the cursor to a pointer finger*/
+}
+input[required] {
+    border-left: 3px solid #031940;
+}
+
+#join-form input:not([type="checkbox"]):not([type="radio"]),
+#join-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #031940;
+    border-radius: 4px;
+}
+
+#linktree {
+    text-align: center;
+    padding: 1.5rem;
+    color: #031940;
+    margin-top: 1rem;
+}
+
+#linktree a {
+    color: #031940;;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#linktree a:hover {
+    color: #031940;;
+}
+
+

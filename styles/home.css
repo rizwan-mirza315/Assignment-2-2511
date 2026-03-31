@@ -1,0 +1,31 @@
+/* Home Page Styles */
+
+
+
+#welcome {
+    padding: 2rem;
+    text-align: center;
+}
+
+#welcome h2 {
+    color: #031940;
+    margin-bottom: 1rem;
+}
+
+#team-photo {
+    padding: 2rem;
+    text-align: center;
+}
+
+#teampic img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#teampic figcaption {
+    color: grey;
+    margin-top: 0.5rem;
+    text-align: center;
+}

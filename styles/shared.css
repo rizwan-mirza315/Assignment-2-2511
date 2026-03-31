@@ -1,0 +1,64 @@
+/* shared page if i want to change multiple pages at once cus they have the same styling*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#hero img {
+    display: block;
+    width: 100%;
+    max-height: 100px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Georgia, serif;
+    color: #1a1a1a;
+    background-color: white(154, 193, 219) ;
+
+}
+
+header {
+    background-color: #031940; /*colour match to BCO banner */ 
+    padding: 1rem 2rem;
+    display: flex;/*puts logo and nav beside each other*/ 
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #ffffff; 
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none; /*Removes underline from nav*/
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover { /*colour will change when this tab is hovered over*/
+    background-color: #2f4665;
+    color: #031940;
+}
+
+nav ul li a.active { /*colour will change when this is active page from the nav*/
+    background-color: #2f4665;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #031940;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+}

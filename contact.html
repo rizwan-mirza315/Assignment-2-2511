@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Apply to join the Bissett Consulting Organization at Mount Royal University.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCO | Join Us</title>
+    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+
+
+<body>
+    <header>
+    <div>
+        <h1>Bissett Consulting Organization</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html"> About</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="contact.html" class="active">Join Today!</a></li>
+            <li><a href="team.html">Our Team</a></li>
+        </ul>
+    </nav>
+    </header>
+        <section id="hero">
+        <img src="images/BCO-banner.png" alt="BCO Banner" >
+    <main>
+        <section id="join-form">
+            <h2>BCO Application</h2>
+            <form action="mailto:rmirz559@mtroyal.ca" method="post" >  <!-- form for applying to BCO, using post because info is sensitive-->
+                <label for="fname"> First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Fist Name" required autofocus> <!-- highlights the name in form -->
+
+                <label for="lname"> Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Last Name" required >
+
+                <label for="phone"> Mobile Number </label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-6789" required  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+                <label for="email">MRU Email</label>
+                <input type="email" id="email" name="email" placeholder="john@mtroyal.ca" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+
+                <label for="program">Program of Study</label>
+                <input type="text" id="program" name="program" placeholder="Computer Information Systems" required>
+
+                <label for="subject">Questions For Us?</label>
+                <input type="text" id="subject" name="subject" placeholder="Let us know!" required>
+
+                <label for="message">Why do you want to join BCO?</label>
+                <textarea id="message" name="message" required></textarea>
+             
+                <label>Year of Study</label>
+                <div><input type="radio" name="year" value="1" required> 1st Year</div>
+                <div><input type="radio" name="year" value="2"> 2nd Year</div>
+                <div><input type="radio" name="year" value="3"> 3rd Year</div>
+                <div><input type="radio" name="year" value="4"> 4th Year</div>
+                <div><input type="radio" name="year" value="5"> 5th or Higher</div>
+
+                <label>Which events interest you?</label>
+                <div><input type="checkbox" name="event" value="summit"> Corporate Strategy Summit</div>
+                <div><input type="checkbox" name="event" value="workshop"> Case Workshop</div>
+                <div><input type="checkbox" name="event" value="cup"> BCO Consulting Cup</div>
+
+                <button type="reset">Clear Form</button>
+                <button type="submit">Submit Application</button>
+
+             </form>
+        </section>
+
+        <section id="linktree"> 
+            <p>Make Sure to check our linktree to stay notified! </p> <a href="https://linktr.ee/bissettconsulting" target="_blank">Follow BCO</a> <!-- Using target blank to open linktree in new tab  -->
+        </section>
+        
+</main>
+
+<footer>
+    <p>Bissett Consulting Organization — Mount Royal University</p>
+    <p>&copy; 2026 BCO. All rights reserved.</p>
+ </footer>
+            
+ 
+</body>
+</html>
+
+

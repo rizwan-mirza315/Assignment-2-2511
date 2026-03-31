@@ -1,0 +1,235 @@
+/* ========= INSANE HOME/TEAM STYLES ========= */
+
+/* If you’re using shared.css already, this will enhance, not break it */
+:root{
+  --navy:#031940;
+  --ink:#0b1220;
+  --steel:#2f4665;
+  --ice:#9ebef1;
+  --paper:#ffffff;
+
+  --glow: 0 0 16px rgba(158,190,241,.55);
+  --shadow: 0 18px 45px rgba(0,0,0,.22);
+}
+
+body{
+  /* animated background */
+  background: radial-gradient(1000px 700px at 10% 10%, rgba(158,190,241,.35), transparent 60%),
+              radial-gradient(900px 700px at 90% 20%, rgba(47,70,101,.25), transparent 55%),
+              linear-gradient(135deg, #ffffff, #f7fbff);
+  min-height: 100vh;
+}
+
+/* ===== Header upgrade ===== */
+header{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(90deg, rgba(3,25,64,.92), rgba(47,70,101,.78));
+  border-bottom: 1px solid rgba(255,255,255,.12);
+  box-shadow: 0 10px 30px rgba(0,0,0,.18);
+}
+
+header h1{
+  letter-spacing: .4px;
+  text-shadow: 0 2px 14px rgba(0,0,0,.25);
+}
+
+/* ===== Nav hover goes crazy ===== */
+nav ul li a{
+  position: relative;
+  border-radius: 999px;
+  transition: transform .2s ease, background-color .2s ease, box-shadow .2s ease;
+}
+
+nav ul li a::after{
+  content:"";
+  position:absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 6px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(158,190,241,0), rgba(158,190,241,1), rgba(158,190,241,0));
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform .25s ease;
+  opacity: .95;
+}
+
+nav ul li a:hover{
+  transform: translateY(-1px);
+  box-shadow: var(--glow);
+}
+
+nav ul li a:hover::after{
+  transform: scaleX(1);
+}
+
+nav ul li a.active{
+  box-shadow: var(--glow);
+}
+
+/* ===== Hero image becomes cinematic ===== */
+#hero{
+  position: relative;
+  overflow: hidden;
+}
+
+#hero img{
+  width: 100%;
+  max-height: 260px;
+  object-fit: cover;
+  filter: saturate(1.08) contrast(1.04);
+  transform: scale(1.02);
+}
+
+/* subtle overlay */
+#hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(180deg, rgba(3,25,64,.12), rgba(3,25,64,.55));
+  pointer-events:none;
+}
+
+/* ===== Welcome title ===== */
+#welcome{
+  padding: 3rem 1.5rem 1.5rem;
+  text-align: center;
+}
+
+#welcome h2{
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  color: var(--navy);
+  letter-spacing: .6px;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  padding: .25rem 1rem;
+}
+
+#welcome h2::before{
+  content:"";
+  position:absolute;
+  inset: -8px -10px;
+  border-radius: 18px;
+  background: linear-gradient(90deg, rgba(158,190,241,.35), rgba(47,70,101,.15));
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  z-index: -1;
+}
+
+/* ===== Team grid: premium cards ===== */
+#team-thanos{
+  width: min(1100px, 92%);
+  margin: 0 auto 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+/* Cards */
+#team-thanos figure{
+  margin: 0;
+  padding: 1.2rem 1.2rem 1.35rem;
+  border-radius: 18px;
+  background: rgba(255,255,255,.74);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(3,25,64,.10);
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+/* glow edge */
+#team-thanos figure::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(158,190,241,.75), rgba(47,70,101,.45), rgba(3,25,64,.2));
+  opacity: 0;
+  transition: opacity .25s ease;
+  z-index: 0;
+}
+
+#team-thanos figure > *{
+  position: relative;
+  z-index: 1;
+}
+
+#team-thanos figure:hover{
+  transform: translateY(-6px) scale(1.01);
+  border-color: rgba(158,190,241,.55);
+  box-shadow: 0 25px 55px rgba(0,0,0,.26);
+}
+
+#team-thanos figure:hover::before{
+  opacity: .22;
+}
+
+/* Titles inside cards */
+#team-thanos figure h2{
+  margin: 0 0 .85rem;
+  font-size: 1.05rem;
+  color: var(--navy);
+  letter-spacing: .3px;
+}
+
+/* Images: consistent + zoom-on-hover */
+#team-thanos figure img{
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid rgba(3,25,64,.12);
+  box-shadow: 0 12px 30px rgba(0,0,0,.18);
+  transition: transform .35s ease, filter .35s ease;
+  filter: contrast(1.02) saturate(1.08);
+}
+
+#team-thanos figure:hover img{
+  transform: scale(1.05);
+  filter: contrast(1.06) saturate(1.18);
+}
+
+/* ===== Footer glow ===== */
+footer{
+  position: relative;
+  overflow: hidden;
+}
+
+footer::before{
+  content:"";
+  position:absolute;
+  inset:-60px -40px;
+  background: radial-gradient(circle at 30% 20%, rgba(158,190,241,.35), transparent 55%),
+              radial-gradient(circle at 70% 40%, rgba(47,70,101,.25), transparent 60%);
+  opacity: .9;
+  pointer-events:none;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 980px){
+  #team-thanos{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  #team-thanos figure img{
+    height: 300px;
+  }
+}
+
+@media (max-width: 620px){
+  nav ul{
+    flex-wrap: wrap;
+    gap: .5rem;
+  }
+  #team-thanos{
+    grid-template-columns: 1fr;
+  }
+  #team-thanos figure img{
+    height: 280px;
+  }
+}
