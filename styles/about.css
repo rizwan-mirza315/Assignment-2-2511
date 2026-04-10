@@ -41,4 +41,23 @@
     grid-column: 1;
 }
 
+.events-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+@media(min-width:590px){
+    .events-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width 790px){
+    .events-grid{
+        padding:1.5rem;
+    }
+}
+
 

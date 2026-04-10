@@ -16,8 +16,7 @@
 body {
     font-family: Georgia, serif;
     color: #1a1a1a;
-    background-color: white(154, 193, 219) ;
-
+    background-color: #f7fbff;
 }
 
 header {
@@ -26,6 +25,8 @@ header {
     display: flex;/*puts logo and nav beside each other*/ 
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /*so it doesnt break on small screen*/
+    gap:0.5rem;
 }
 
 header h1 {
@@ -36,7 +37,15 @@ header h1 {
 nav ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
     gap: 1rem;
+}
+
+@media(min-width:590px){ /*only apply these styles if the screen is at least 590px wide*/
+    nav ul{
+        flex-direction: row;
+        gap: 1rem;
+    }
 }
 
 nav ul li a {
@@ -61,4 +70,17 @@ footer {
     text-align: center;
     padding: 1.5rem 2rem;
     margin-top: 2rem;
+}
+
+@media(min-width: 790px){ /*for when the min width is 790px*/
+    
+        
+    body{
+        background-color: #d6e4f7;
+    }
+    main{
+        max-width: 790px;
+        margin: 0 auto;
+        background-color: #f7fbff;
+    }
 }
