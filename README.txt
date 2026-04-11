@@ -25,14 +25,14 @@ Automated Analysis (WAVE):
 - about.html: 10/10
 - sponsors.html: 10/10
 - team.html: 10/10
-- contact.html: 9.9/10 
+- contact.html: 10/10 
 
 General changes made: 
 
 The main type of issues we faced were form accessibility problems. The inputs lacked proper label associations, which effects screen reader users. 
 Fixed by making sure all inputs have linked labels and by making sure group inputs use fieldset/legend.
 
-NOTE: used claudecode for 2 push to github, we expeirienced troubled early on 
+NOTE: used claudecode for 3 push to github, we expeirienced troubled early on and we expeirenced trouble with the last push when trying to update the readme
 
 
 
