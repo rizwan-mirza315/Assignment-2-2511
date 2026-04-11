@@ -1,26 +1,41 @@
-Bissett Consulting Organization Website 
-Rizwan Mirza
+Bissett Consulting Organization Website Assignment 2
+Rizwan Mirza & Enzo Farshori - 201749288
 201720559
 Comp 2511
 
-Html Pages
-index.html - welcome to bco page with exec photo
-about.html - a description of our events with some photos
-sponors.html - a table showing the sponsorship tiers available for our case comp
-contact.html - Join BCO page, was origionally going to be our contact but I changed it 
-to use the form
+Rizwan: responsive CSS, media queries, normalize.css, accessibility fixes
+Enzo: HTML structure updates, cross-device testing, WAVE analysis
 
-CSS Pages 
-shared.css - for elements that repeat on all Pages
-about. css - about page styling 
-sponors.css - sponsor page styling 
-contact.css - form styling 
+Manual Analysis:
 
-Folder Structure: 
-Project is in a file called A1-Mirza-Rizwan
-CSS files are in a folder called styles
-pictures are in a folder called images 
+Perceivable:
+Issue: Low contrast on figcaption text 
+Fix: Changed color from grey to black to meet WCAG contrast requirements
 
-Images  
-BCO logo and event pics: Taken or made by made
-Bissett School of Business - owned by MRU
+Understandable:
+Issue: Radio buttons and checkboxes had no associated labels
+Fix: Added id attributes to each input and matching for attributes on labels
+
+Robust:
+Issue: Group labels for radio/checkbox sets werent linked to inputs
+Fix: Wrapped groups in fieldset with legend elements
+
+Automated Analysis (WAVE):
+- index.html: 10/10
+- about.html: 10/10
+- sponsors.html: 10/10
+- team.html: 10/10
+- contact.html: 9.9/10 
+
+General changes made: 
+
+The main type of issues we faced were form accessibility problems. The inputs lacked proper label associations, which effects screen reader users. 
+Fixed by making sure all inputs have linked labels and by making sure group inputs use fieldset/legend.
+
+NOTE: used claudecode for one push to github, we expeirienced troubled early on 
+
+
+
+
+
+
