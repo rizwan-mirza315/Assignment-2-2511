@@ -54,17 +54,22 @@
                 <label for="message">Why do you want to join BCO?</label>
                 <textarea id="message" name="message" required></textarea>
              
-                <label>Year of Study</label>
-                <div><input type="radio" id="year1" name="year" value="1" required><label for="year1">1st Year</label></div>
-                <div><input type="radio" id="year2" name="year" value="2"><label for="year2">2nd Year</label></div>
-                <div><input type="radio" id="year3" name="year" value="3"><label for="year3">3rd Year</label></div>
-                <div><input type="radio" id="year4" name="year" value="4"><label for="year4">4th Year</label></div>
-                <div><input type="radio" id="year5" name="year" value="5"><label for="year5">5th or Higher</label></div>
+                <fieldset>
 
-                <label>Which events interest you?</label>
-                <div><input type="checkbox" id="summit" name="event" value="summit"><label for="summit">Corporate Strategy Summit</label></div>
-                <div><input type="checkbox" id="workshop" name="event" value="workshop"><label for="workshop">Case Workshop</label></div>
-                <div><input type="checkbox" id="cup" name="event" value="cup"><label for="cup">BCO Consulting Cup</label></div>
+                    <legend>Year of Study</legend>
+                    <div><input type="radio" id="year1" name="year" value="1" required><label for="year1">1st Year</label></div>
+                    <div><input type="radio" id="year2" name="year" value="2"><label for="year2">2nd Year</label></div>
+                    <div><input type="radio" id="year3" name="year" value="3"><label for="year3">3rd Year</label></div>
+                    <div><input type="radio" id="year4" name="year" value="4"><label for="year4">4th Year</label></div>
+                    <div><input type="radio" id="year5" name="year" value="5"><label for="year5">5th or Higher</label></div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Which events interest you?</legend>
+                    <div><input type="checkbox" id="summit" name="event" value="summit"><label for="summit">Corporate Strategy Summit</label></div>
+                    <div><input type="checkbox" id="workshop" name="event" value="workshop"><label for="workshop">Case Workshop</label></div>
+                    <div><input type="checkbox" id="cup" name="event" value="cup"><label for="cup">BCO Consulting Cup</label></div>
+                </fieldset>
 
                 <button type="reset">Clear Form</button>
                 <button type="submit">Submit Application</button>
