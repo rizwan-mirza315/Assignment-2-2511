@@ -32,7 +32,9 @@ General changes made:
 The main type of issues we faced were form accessibility problems. The inputs lacked proper label associations, which effects screen reader users. 
 Fixed by making sure all inputs have linked labels and by making sure group inputs use fieldset/legend.
 
-NOTE: used claudecode for one push to github, we expeirienced troubled early on 
+NOTE: used claudecode for 2 push to github, we expeirienced troubled early on 
+
+
 
 
 
